@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/564x/21/2a/40/212a40d0af2ac7285fa9b8416da44795.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  background-color: #333;
+  color: #b32424;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+article {
+  padding: 20px;
+}
+
+.body {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.content.expanded {
+  margin-left: 0;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999; 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+.right-image {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+
+.hobby {
+  margin-bottom: 20px;
+}
+
+.hobby p {
+  margin-bottom: 10px;
+}
+
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 10px; 
+}
+
+.collage img {
+  width: 100%; 
+  height: auto; 
+}
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-section h2 {
+  text-align: center;
+}
+
